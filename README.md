@@ -104,6 +104,12 @@ fish, PowerShell and persistent setup are covered in
 ## Quick start
 
 ```bash
+# For non-interactive environments (CI, AI agents), use environment variables:
+#   export BITBUCKET_SERVER=https://your.server.com
+#   export BITBUCKET_TOKEN=your_pat
+#   export BITBUCKET_FLAVOR=datacenter
+# See docs/agent-quickstart.md for the full agent setup guide.
+
 bitbucket-cli config init --pretty   # interactive TUI setup (recommended for humans)
 bitbucket-cli doctor                 # verify configuration and connectivity
 bitbucket-cli workspace list         # discover the workspaces / projects you can see
